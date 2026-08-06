@@ -1,20 +1,11 @@
-
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import HeroSection from "@/components/hero-section/hero-section";
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-full bg-foreground font-sans text-background antialiased" style={{ fontFamily: "var(--font-geist-sans)" }}>
-
-    </div>
+    <>
+    <article className="flex flex-col">
+      <HeroSection/>
+    </article>
+    </>
   );
 }

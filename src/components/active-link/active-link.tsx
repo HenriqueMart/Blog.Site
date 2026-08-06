@@ -8,9 +8,9 @@ type ActiveLink = {
 
 export default function ActiveLink({children, href, ...rest}: ActiveLink) {
    const router = useRouter();
-   const isCurrentPath = router.asPath === href || router.asPath === rest.as || router.asPath.startsWith(rest.as as string);
+   const isCurrentPath = router.asPath === href || router.asPath === rest.as
     return (
-        <Link href={href} className={cn('text-sm font-medium transition-colors hover:text-primary', isCurrentPath ? 'text-blue-500' : 'text-muted-foreground')}>
+        <Link href={href} className={cn('text-action-sm transition-colors hover:text-primary', isCurrentPath ? 'text-blue-200' : 'text-gray-100')}>
             {children}
         </Link>
     )
