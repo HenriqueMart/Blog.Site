@@ -11,6 +11,7 @@ const buttonVariants = cva(
         default: "bg-blue-200 text-white hover:bg-blue-300",
         outline:
           "border border-gray-400 bg-gray-700 text-primary hover:bg-accent transition-colors  hover:text-blue-200 hover:border-blue-200",
+        primary: 'bg-blue-300 text-white hover:bg-blue-300 rounded-full',
         secondary: "bg-gray-100 text-gray-800 hover:bg-blue-100 rounded-full",
         ghost: "bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground",
         destructive:
