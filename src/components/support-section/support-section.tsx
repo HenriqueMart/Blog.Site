@@ -1,16 +1,11 @@
-import { Heart, HeartBreak, HeartHalf, HeartHalfIcon, HeartStraightBreak, HeartStraightBreakIcon, PaintBrushBroadIcon, StorefrontIcon } from "@phosphor-icons/react";
-import { PT_Sans_Caption } from "next/font/google";
+import { Heart, PaintBrushBroadIcon, StorefrontIcon } from "@phosphor-icons/react";
 
-const ptSansCaption = PT_Sans_Caption({
-    subsets: ["latin"],
-    weight: '700'
-})
 
 export default function SupportSection() {
     return (
         <section className=" pb-8 md:py-10 bg-gradient-to-r from-gray-500 to-gray-700 ">
             <div className="container flex flex-col items-center gap-12">
-                <h2 className={`${ptSansCaption.className} text-balance text-center text-heading-xl text-gray-100`}>
+                <h2 className={`font-sans text-balance text-center text-heading-xl text-gray-100`}>
                     Sua loja de afiliados, simples, do jeito que deveria ser
                 </h2>
             

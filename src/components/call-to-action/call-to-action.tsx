@@ -1,12 +1,6 @@
 import { ArrowRightIcon, StorefrontIcon } from "@phosphor-icons/react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { PT_Sans_Caption } from "next/font/google";
-
-const ptSansCaption = PT_Sans_Caption({
-    subsets: ['latin'],
-    weight: '700'
-})
 
 
 export function CallToAction (){
@@ -18,7 +12,7 @@ export function CallToAction (){
                     <StorefrontIcon className="text-cyan-100"/>
                 </div>
 
-                <h2 className={`${ptSansCaption} text-gray-100 text-balance text-heading-xl` }>Crie uma loja online e inicie suas vendas ainda hoje</h2>
+                <h2 className={`font-sans text-gray-100 text-balance text-heading-xl` }>Crie uma loja online e inicie suas vendas ainda hoje</h2>
                 
                 <Button variant={"primary"} className="mt-6" >
                     <Link href={"/criar-loja"} className="flex justify-center items-center gap-2" >
