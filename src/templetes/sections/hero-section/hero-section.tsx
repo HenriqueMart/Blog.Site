@@ -1,6 +1,6 @@
 
+import { Button } from "@base-ui/react";
 import { ArrowRight, Clock, StorefrontIcon } from "@phosphor-icons/react";
-import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,12 +18,12 @@ export default function HeroSection(){
                         <div>
                             <div className="flex items-center gap-2">
                                 <Clock className="text-cyan-100 h-4 w-4"/>
-                                <span className="text-gray-200">Crie o seu site em menos de 5 minutos</span>
+                                <span className="text-body-md text-gray-200">Crie o seu site em menos de 5 minutos</span>
                             </div>
 
                             <div className="flex items-center gap-2">
                                 <StorefrontIcon className="text-cyan-100 h-4 w-4"/>
-                                <span className="text-gray-200">Acompanhe e otimize seu negócio online</span>
+                                <span className="text-body-md text-gray-200">Acompanhe e otimize seu negócio online</span>
                             </div>
                         </div>
 
