@@ -22,11 +22,12 @@ export default function FeatureSection() {
                     <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">Personalizável</span>
                     <h2 className="font-sans text-gray-100 text-heading-lg">Tenha um loja online personalizada com a cara da sua marca</h2>
                 
-                    <Button className="w-fit rounded-full hidden mt-4 md:mt-auto md:flex" asChild>
-                        <Link href="/criar-loja" className="flex gap-2 justify-center items-center">
+                    <Button
+                        className="w-fit rounded-full hidden mt-4 md:mt-auto md:flex"
+                        render={<Link href="/criar-loja" className="flex gap-2 justify-center items-center" />}
+                    >
                             Criar Loja Grátis
                             <ArrowRight/>
-                        </Link>
                     </Button>
                 </div>
 
@@ -41,11 +42,12 @@ export default function FeatureSection() {
                         />
                     </div>
 
-                    <Button className="w-full rounded-full mt-4 md:mt-auto md:hidden" asChild>
-                        <Link href="/criar-loja" className="flex gap-2 justify-center items-center">
+                    <Button
+                        className="w-full rounded-full mt-4 md:mt-auto md:hidden"
+                        render={<Link href="/criar-loja" className="flex gap-2 justify-center items-center" />}
+                    >
                             Criar Loja Grátis
                             <ArrowRight/>
-                        </Link>
                     </Button>
                 </div>
             </div>

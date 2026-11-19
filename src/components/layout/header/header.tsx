@@ -14,8 +14,8 @@ export function Header() {
                     <nav className="flex items-center gap-6">
                         <ActiveLink href='/'>Início</ActiveLink>
                        <ActiveLink href='/blog'>Blog</ActiveLink>
-                       <Button variant="secondary" asChild> 
-                           <Link href="/start">Começar</Link>
+                       <Button variant="secondary" render={<Link href="/start" />}>
+                           Começar
                         </Button>
                     </nav>
                 </div>

@@ -1,8 +1,8 @@
 
-import { Button } from "@base-ui/react";
 import { ArrowRight, Clock, StorefrontIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../../../components/ui/button";
 
 export default function HeroSection(){
     return (
@@ -28,11 +28,12 @@ export default function HeroSection(){
                         </div>
 
                     <div className="text-white flex flex-col gap-2 mt-5 items-center md:items-start lg:items-start">
-                        <Button className="rounded-full w-fit gap-2" asChild>
-                           <Link className="flex items-center gap-2" href="/criar-loja">
+                        <Button
+                            className="rounded-full w-fit gap-2"
+                            render={<Link className="flex items-center gap-2" href="/criar-loja" />}
+                        >
                                 Criar loja grátis
                                 <ArrowRight/>
-                           </Link>
                         </Button>
 
                         <p className="text-gray-300 text-body-xs">Não precisa de cartão de crédito</p>
