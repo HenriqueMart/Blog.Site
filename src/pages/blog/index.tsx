@@ -1,4 +1,4 @@
-import { Header } from "@/components/layout/header";
+import { Search } from "@/components/search";
 
 export default function BlogPage() {
     return (
@@ -11,6 +11,7 @@ export default function BlogPage() {
                             Dicas e estratégias para impulsionar seu negócio
                         </h1>
                     </div>
+                    <Search/>
                 </div>
 
             </header>
